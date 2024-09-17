@@ -1,0 +1,70 @@
+export enum UserRoles {
+  ERP_RETAILER = 'ERP_RETAILER',
+  ERP_CONSUMER = 'ERP_CONSUMER',
+  ERP_DEALER = 'ERP_DEALER',
+  ERP_SUPPLIER = 'ERP_SUPPLIER',
+  ED_TEACHER = 'ED_TEACHER',
+  ED_STUDENT = 'ED_STUDENT',
+  MED_DOCTOR = 'MED_DOCTOR',
+  MED_PATIENT = 'MED_PATIENT',
+  MED_ASSISTANT = 'MED_ASSISTANT',
+  LEGAL_ADVISOR = 'LEGAL_ADVISOR',
+  DEFAULT = 'DEFAULT',
+}
+
+export enum UserTypes {
+  SUPERADMIN = 'SUPERADMIN',
+  ADMIN = 'ADMIN',
+  PROFESSIONAL = 'PROFESSIONAL',
+  INFLUENCER = 'INFLUENCER',
+  DEFAULT = 'DEFAULT',
+}
+
+export const EXPECTED_USER_TYPES = [
+  UserTypes.SUPERADMIN,
+  UserTypes.ADMIN,
+  UserTypes.PROFESSIONAL,
+  UserTypes.INFLUENCER,
+] as const;
+
+export enum UserStatus {
+  VERIFIED = 'VERIFIED',
+  UNVERIFIED = 'UNVERIFIED',
+  PENDING = 'PENDING',
+  BANNED = 'BANNED',
+}
+
+export const EXPECTED_USER_STATUS = [
+  UserStatus.VERIFIED,
+  UserStatus.UNVERIFIED,
+  UserStatus.PENDING,
+  UserStatus.BANNED,
+] as const;
+
+export enum RateTypes {
+  HOURLY = 'HOURLY',
+  DAILY = 'DAILY',
+  WEEKLY = 'WEEKLY',
+  MONTHLY = 'MONTHLY',
+}
+
+export enum AuthProviders {
+  GOOGLE = 'GOOGLE',
+  FACEBOOK = 'FACEBOOK',
+  X = 'X',
+  PHONE = 'PHONE',
+  EMAIL = 'EMAIL',
+}
+
+export enum AppUserStatus {
+  ACTIVE = 'ACTIVE',
+  INACTIVE = 'INACTIVE',
+  BANNED = 'BANNED',
+}
+
+export enum AppUserTierStatus {
+  ACTIVE = 'ACTIVE',
+  UPGRADED = 'UPGRADED',
+  DOWNGRADED = 'DOWNGRADED',
+  CANCELLED = 'CANCELLED',
+}
