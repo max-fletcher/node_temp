@@ -11,7 +11,6 @@ import { corsOptions } from './config/cors.config';
 import { globalLimiterOptions } from './config/globalRateLimiter.config';
 import { testRouter } from './routes/test.routes';
 import setupSockerServer from './utils/setupSocketServer';
-import { appAuthRouter } from './routes/app/auth.routes';
 import { connectMongoose } from './db/clients/mongo.client';
 
 // const numCPUs = os.cpus().length
@@ -64,7 +63,7 @@ const server = () => {
     // test router. for development purposes only
     app.use('/user/api/v1/test', testRouter);
     // routes
-    app.use('/user/api/v1/app/auth', appAuthRouter);
+    // app.use('/user/api/v1/test', testRouter);
 
     app.all('*', (req, res) => {
       console.log('here', req);

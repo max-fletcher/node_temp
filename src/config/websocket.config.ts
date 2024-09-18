@@ -8,4 +8,4 @@ export const socketAllowedOrigins = [
   'http://localhost:5173',
 ];
 
-export const socketPort = 4002;
+export const socketPort = 4004;
